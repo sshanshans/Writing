@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Host your first interactive tutorial on your shiny server – Shan Shan – Applied Mathematics and Statistics</title>
+    <title>Host your learnr tutorial on your own shiny server – Shan Shan – Applied Mathematics and Statistics</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,16 +9,16 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="Congrats! Now you have configured the shiny server on your virtual machine. To host your interactive tutorial, you need to place the tutorial file (.Rmd) in the correct folder via the command scp that transfers your file securely to the virtual machine.
+    <meta name="description" content="Congrats! Now you have configured the shiny server on your virtual machine. To host your learnr tutorial, you need to place the tutorial file (.Rmd) in the correct folder via the command scp that transfers your file securely to the virtual machine.
 " />
-    <meta property="og:description" content="Congrats! Now you have configured the shiny server on your virtual machine. To host your interactive tutorial, you need to place the tutorial file (.Rmd) in the correct folder via the command scp that transfers your file securely to the virtual machine.
+    <meta property="og:description" content="Congrats! Now you have configured the shiny server on your virtual machine. To host your learnr tutorial, you need to place the tutorial file (.Rmd) in the correct folder via the command scp that transfers your file securely to the virtual machine.
 " />
     
     <meta name="author" content="Shan Shan" />
 
     
-    <meta property="og:title" content="Host your first interactive tutorial on your shiny server" />
-    <meta property="twitter:title" content="Host your first interactive tutorial on your shiny server" />
+    <meta property="og:title" content="Host your learnr tutorial on your own shiny server" />
+    <meta property="twitter:title" content="Host your learnr tutorial on your own shiny server" />
     
 
     <!--[if lt IE 9]>
@@ -43,7 +43,7 @@
           </div>
 
           <nav>
-            <a href="/writing/">Blog</a>
+            <a href="https://sshanshans.github.io"> &#8592 Back</a>
           </nav>
         </header>
       </div>
@@ -51,19 +51,19 @@
 
     <div id="main" role="main" class="container">
       <article class="post">
-  <h1>Host your first interactive tutorial on your shiny server</h1>
+  <h1>Host your learnr tutorial on your own shiny server</h1>
 
   <div class="entry">
-    <p>Congrats! Now you have configured the shiny server on your virtual machine. To host your interactive tutorial, you need to place the tutorial file (.Rmd) in the correct folder via the command <code class="language-plaintext highlighter-rouge">scp</code> that transfers your file securely to the virtual machine.</p>
+    <p>Congrats! Now you have configured the shiny server on your virtual machine. To host your learnr tutorial, you need to place the tutorial file (.Rmd) in the correct folder via the command <code class="language-plaintext highlighter-rouge">scp</code> that transfers your file securely to the virtual machine.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo scp [local_file] [remote_username]@[host_address]:/srv/shiny-server/[remote_folder]
 </code></pre></div></div>
-<p>The <code class="language-plaintext highlighter-rouge">sudo scp</code> command allows you to transfer the <code class="language-plaintext highlighter-rouge">[local_file]</code> to the folder <code class="language-plaintext highlighter-rouge">/srv/shiny-server/[remote_folder]</code> on the remote server.  To use this code, change the following:</p>
+<p>The <code class="language-plaintext highlighter-rouge">sudo scp</code> command allows you to transfer the <code class="language-plaintext highlighter-rouge">[local_file]</code> to the folder <code class="language-plaintext highlighter-rouge">/srv/shiny-server/[remote_folder]</code> on the remote server <code class="language-plaintext highlighter-rouge">[remote_username]@[host_address]</code>.  To use this code, change the following:</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">[local_file]</code>: The path and name of the file we want to copy</li>
   <li><code class="language-plaintext highlighter-rouge">[remote_username]</code>:  Your username on the virtual machine</li>
-  <li><code class="language-plaintext highlighter-rouge">[host_address]</code>: The IP address of your virtual machine</li>
+  <li><code class="language-plaintext highlighter-rouge">[host_address]</code>: The host address of your virtual machine</li>
   <li><code class="language-plaintext highlighter-rouge">[remote_folder]</code>: The directory you want to copy the file into</li>
 </ul>
 
@@ -71,11 +71,10 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo scp /Users/sshan/tutorial.Rmd sshan@rshiny.mtholyoke.edu:/srv/shiny-server/sshan/
 </code></pre></div></div>
 <h4 id="your-tutorial-is-now-up-in-the-air">Your tutorial is now up in the air</h4>
-<p>Viola! You have just uploaded and deployed your first interactive tutorial on the shiny server. You can view it by going to that folder’s URL on the IP.</p>
+<p>Viola! You have just uploaded and deployed your first learnr tutorial on the shiny server. You can view it by going to that folder’s URL listened on the IP address <code class="language-plaintext highlighter-rouge">138.110.84.108</code>  with port <code class="language-plaintext highlighter-rouge">3838</code>.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://http://138.110.84.108:3838/sshan/tutorial.Rmd
 </code></pre></div></div>
-
-<p>If you forgot what your IP is on the remote server, you can find out by the <code class="language-plaintext highlighter-rouge">hostname -I</code> command.</p>
+<p>If you forgot what your IP address is,  you can find out by the <code class="language-plaintext highlighter-rouge">hostname -I</code> command.</p>
 
 <h1 id="other-useful-commands">Other useful commands</h1>
 
