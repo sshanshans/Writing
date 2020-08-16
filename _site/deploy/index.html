@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Host your first interactive tutorial on your shiny server – Shan Shan – Applied Mathematics and Statistics</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Congrats! Now you have configured the shiny server on your virtual machine. To host your interactive tutorial, you need to place the tutorial file (.Rmd) in the correct folder via the command scp that transfers your file securely to the virtual machine.
+" />
+    <meta property="og:description" content="Congrats! Now you have configured the shiny server on your virtual machine. To host your interactive tutorial, you need to place the tutorial file (.Rmd) in the correct folder via the command scp that transfers your file securely to the virtual machine.
+" />
+    
+    <meta name="author" content="Shan Shan" />
+
+    
+    <meta property="og:title" content="Host your first interactive tutorial on your shiny server" />
+    <meta property="twitter:title" content="Host your first interactive tutorial on your shiny server" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/writing/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Shan Shan - Applied Mathematics and Statistics" href="/writing/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/writing/" class="site-avatar"><img src="https://sshanshans.github.io/images/avatar.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/writing/">Shan Shan</a></h1>
+            <p class="site-description">Applied Mathematics and Statistics</p>
+          </div>
+
+          <nav>
+            <a href="/writing/">Blog</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Host your first interactive tutorial on your shiny server</h1>
+
+  <div class="entry">
+    <p>Congrats! Now you have configured the shiny server on your virtual machine. To host your interactive tutorial, you need to place the tutorial file (.Rmd) in the correct folder via the command <code class="language-plaintext highlighter-rouge">scp</code> that transfers your file securely to the virtual machine.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo scp [local_file] [remote_username]@[host_address]:/srv/shiny-server/[remote_folder]
+</code></pre></div></div>
+<p>The <code class="language-plaintext highlighter-rouge">sudo scp</code> command allows you to transfer the <code class="language-plaintext highlighter-rouge">[local_file]</code> to the folder <code class="language-plaintext highlighter-rouge">/srv/shiny-server/[remote_folder]</code> on the remote server.  To use this code, change the following:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">[local_file]</code>: The path and name of the file we want to copy</li>
+  <li><code class="language-plaintext highlighter-rouge">[remote_username]</code>:  Your username on the virtual machine</li>
+  <li><code class="language-plaintext highlighter-rouge">[host_address]</code>: The IP address of your virtual machine</li>
+  <li><code class="language-plaintext highlighter-rouge">[remote_folder]</code>: The directory you want to copy the file into</li>
+</ul>
+
+<h4 id="example">Example</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo scp /Users/sshan/tutorial.Rmd sshan@rshiny.mtholyoke.edu:/srv/shiny-server/sshan/
+</code></pre></div></div>
+<h4 id="your-tutorial-is-now-up-in-the-air">Your tutorial is now up in the air</h4>
+<p>Viola! You have just uploaded and deployed your first interactive tutorial on the shiny server. You can view it by going to that folder’s URL on the IP.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://http://138.110.84.108:3838/sshan/tutorial.Rmd
+</code></pre></div></div>
+
+<p>If you forgot what your IP is on the remote server, you can find out by the <code class="language-plaintext highlighter-rouge">hostname -I</code> command.</p>
+
+<h1 id="other-useful-commands">Other useful commands</h1>
+
+<ul>
+  <li>Connect to your virtual machine:    <code class="language-plaintext highlighter-rouge">ssh [username]@[host_address]</code></li>
+  <li>Change the current directory:   <code class="language-plaintext highlighter-rouge">cd [new_directory]</code></li>
+  <li>Made a new folder :   <code class="language-plaintext highlighter-rouge">mkdir [new_directory]</code></li>
+</ul>
+
+  </div>
+
+  <div class="date">
+    Written on August 15, 2020
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/sshanshans"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/sshanshans"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
