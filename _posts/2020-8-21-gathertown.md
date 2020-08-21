@@ -56,11 +56,17 @@ While the students are in the breakout room over zoom doing initial introduction
 After the faculty members are ready, the students will join the town space. They will use the assigned number and the `locate` feature to find their assigned faculty. 
 
 ## Step 4: Speed-dating type group discussion
-The group together with the faculty member will have 5-10 minutes to discuss an ice-breaking question, e.g., what is your biggest hope/fear for learning math/stat this semester.
+The group together with the faculty member will have 5-10 minutes to discuss an ice-breaking question, e.g., what is your biggest hope/fear for learning math/stat this semester. The students will have 1 minute to think on their own and write their answer in the local chat. One trick I learned from my colleague Jessica Sidman is to have students hit the send button all at the same time. I thought that was a really fun experience. Then the faculty member will discuss what the students have submitted, and offer them some words of insights. 
 
-When the time is up, the admin will post a message in the global chat for a new table assignment. 
+When the time is up, the admin will post a message in the global chat for a new number assignment.
 
-The students move to the newly assigned table to discuss other ice-breaking questions, e.g., what advice would you give yourself when you were first year in college. 
+The students move to the newly assigned faculty to discuss other ice-breaking questions, e.g., what advice would you give yourself when you were first year in college. 
+
+Some example ice-breaking questions: 
+1. my all time favorite: what is your biggest hope/fear for learning math/stat this semester
+2. Two Truths and a Lie
+3. Talk about your favorite theorem/algorithm
+2. What advice would you give yourself when you were first year in college
 
 ## Step 5: Repeat the steps for a few rounds
 Repeat the Step 4 for a few rounds, and the remaining time will be used for mingling. 
