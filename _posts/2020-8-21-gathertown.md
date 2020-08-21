@@ -16,12 +16,15 @@ Let's first create a town space following the instructions on their webpage [htt
 Launch the town url in a Chrome or Firefox browser.  Note that Gather Town only supports the Chrome or Firefox browsers at this moment. You will be able to join the space using Safari or IE, but many features will be disabled. 
 
 To continue, enter the password:
+
 ![im1](https://github.com/sshanshans/writing/blob/master/images/post/scr1.png?raw=true)
 
 Allow gather town to use your camera and microphone:
+
 ![im2](https://github.com/sshanshans/writing/blob/master/images/post/scr2.png?raw=true)
 
 Type your name and hit the `Join the Gathering!` button: 
+
 ![im3](https://github.com/sshanshans/writing/blob/master/images/post/scr3.png?raw=true)
 
 ## Tip 3: wandering around in the town

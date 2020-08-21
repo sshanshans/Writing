@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Command line free tutorial for deploying your learnr tutorial
+title: Command line free tutorial for deploying on your shiny server
 ---
 
 Congrats! Now you have configured the shiny server on your virtual machine. Let's open an terminal and `scp` your tutorial to the vm. What? You said you hate command lines. Ok, this blog will show you how to deploy a learnr tutorial without a single command line.
